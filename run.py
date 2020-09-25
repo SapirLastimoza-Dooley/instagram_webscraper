@@ -2,6 +2,7 @@ from selenium import webdriver
 from time import sleep
 from credentials import pw
 from selenium.webdriver import ActionChains
+from keyWords import keywords
 
 
 class InstaBot:
@@ -62,7 +63,7 @@ class InstaBot:
     # opens one caption at a time
     def openCaptions(self):
         i = 0
-        while i < 50:
+        while i < 10:
             # find "more" button after captions
             moreButton = self.driver.find_element_by_class_name('sXUSN')
 
@@ -71,19 +72,42 @@ class InstaBot:
             sleep(2)
 
             # scrolls up a bit so that button is clicked 
-            self.driver.execute_script("window.scrollBy(0,-50);")
+            self.driver.execute_script("window.scrollBy(0,-150);")
             sleep(2)
             moreButton.click()
 
             # scrolls down a bit so that next button can be found
-            self.driver.execute_script("window.scrollBy(0,150);")
+            self.driver.execute_script("window.scrollBy(0,250);")
             sleep(2)
             i += 1
 
+    # opens x amount of captions and saves to text file
+    def gatherCaptions(self, keywords):
+        i = 0
+        finalList = []
+
+        while i < 5:
+
+            # find more button and click
+            moreButton = self.driver.find_element_by_class_name('sXUSN')
+            self.driver.execute_script("arguments[0].scrollIntoView();", moreButton)
+            self.driver.execute_script("window.scrollBy(0,-150);")
+            moreButton.click()
+            sleep(2)
+
+            # find caption text box
+            caption = self.driver.find_element_by_class_name("_8Pl3R").text
+            finalList.append(caption)
+            sleep(5)
+            i += 1
+            sleep(2)
         
-
-
+        # write caption to file
+        with open("text_file.txt", "w", encoding='utf-8') as f:
+            for item in finalList:
+                f.write("%s\n" % item)
 
 myBot = InstaBot("tkpaddles95@gmail.com", pw)
-myBot.scrollFullPage()
-myBot.openCaptions()
+#myBot.scrollFullPage()
+#myBot.openCaptions()
+myBot.gatherCaptions2(keywords)
