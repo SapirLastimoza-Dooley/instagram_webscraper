@@ -45,6 +45,7 @@ class InstaBot:
             new_height = self.driver.execute_script("return document.body.scrollHeight")
             if new_height == last_height:
                 break
+            # Stops code from scrolling indefinietly
             if i > 2:
                 break
             last_height = new_height
@@ -60,12 +61,19 @@ class InstaBot:
     def openCaptions(self):
         i = 0
         while i < 50:
+            # find "more" button after captions
             moreButton = self.driver.find_element_by_class_name('sXUSN')
+
+            # scrolls next button into view
             self.driver.execute_script("arguments[0].scrollIntoView();", moreButton)
             sleep(2)
+
+            # scrolls up a bit so that button is clicked 
             self.driver.execute_script("window.scrollBy(0,-50);")
             sleep(2)
             moreButton.click()
+
+            # scrolls down a bit so that next button can be found
             self.driver.execute_script("window.scrollBy(0,150);")
             sleep(2)
             i += 1
