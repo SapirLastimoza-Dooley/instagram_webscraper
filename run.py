@@ -28,6 +28,8 @@ class InstaBot:
             .click()
         sleep(2)
 
+
+    # loads full page so that other data can be loaded
     def scrollFullPage(self):
         i = 1
         SCROLL_PAUSE_TIME = 2
@@ -57,7 +59,7 @@ class InstaBot:
         self.driver.execute_script("window.scrollTo(0, 0);")
         sleep(10)
 
- 
+    # opens one caption at a time
     def openCaptions(self):
         i = 0
         while i < 50:
