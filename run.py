@@ -97,7 +97,10 @@ class InstaBot:
 
             # find caption text box
             caption = self.driver.find_element_by_class_name("_8Pl3R").text
-            finalList.append(caption)
+            res = [ele for ele in keywords if(ele in caption)] 
+            if res == True:
+                finalList.append(caption)
+            res = []
             sleep(5)
             i += 1
             sleep(2)
@@ -110,4 +113,4 @@ class InstaBot:
 myBot = InstaBot("tkpaddles95@gmail.com", pw)
 #myBot.scrollFullPage()
 #myBot.openCaptions()
-myBot.gatherCaptions2(keywords)
+myBot.gatherCaptions(keywords)
