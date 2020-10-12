@@ -3,6 +3,7 @@ from time import sleep
 from credentials import pw
 from selenium.webdriver import ActionChains
 from keyWords import keywords
+import re
 
 
 class InstaBot:
@@ -10,107 +11,99 @@ class InstaBot:
         self.driver = webdriver.Chrome()
         self.username = username
         self.driver.get("https://instagram.com")
-        sleep(2)
+        SLEEP_TIME = 5
+        print("Page Loaded")
+        sleep(SLEEP_TIME)
+
         # Enter username
         self.driver.find_element_by_xpath("//input[@name=\"username\"]")\
             .send_keys(username)
+        print("Username Entered")
+        sleep(SLEEP_TIME)
+
         # Enter password
         self.driver.find_element_by_xpath("//input[@name=\"password\"]")\
             .send_keys(pw)
+        print("Password Entered")
+        sleep(SLEEP_TIME)
+
         # Submit
         self.driver.find_element_by_xpath('//button[@type="submit"]')\
             .click()
-        sleep(4)
+        print("Credentials Submitted")
+        sleep(SLEEP_TIME)
+
         # Skip pop-ups
         self.driver.find_element_by_xpath("//button[contains(text(), 'Not Now')]")\
             .click()
-        sleep(4)
+        sleep(SLEEP_TIME)
         self.driver.find_element_by_xpath("//button[contains(text(), 'Not Now')]")\
             .click()
-        sleep(2)
+        print("Pop-Ups Skipped")
+        sleep(SLEEP_TIME)
+
+    def main(self):
+        SLEEP_TIME = 6
+        counter = 0
+        numPosts = 5
+
+        myBot.findPeople()
+        sleep(SLEEP_TIME)
+        myBot.clickFirstPost()
+        sleep(SLEEP_TIME)
+
+        while counter < numPosts:
+            sleep(SLEEP_TIME)
+            caption = myBot.saveCaption()
+            check = myBot.checkCaption(caption, keywords)
+
+            if check == False:
+                myBot.likePost()
+                myBot.savePost
+                print(f"Post {counter + 1} liked and saved.")
+                sleep(SLEEP_TIME)
+
+            myBot.nextPic()
+
+    def findPeople(self):
+        discoverButton = self.driver.find_element_by_xpath('//a[@href="/explore/"]')
+        discoverButton.click()
+        print("Discover Opened")
+
+    def clickFirstPost(self):
+        firstPost = self.driver.find_element_by_class_name('eLAPa')
+        firstPost.click()
+        print("First Post Opened")
+                
+    def saveCaption(self):
+        tempString = ""
+        caption = self.driver.find_element_by_class_name("C4VMK").text
+        tempString += caption
+        print("Caption Saved")
+        return tempString
+
+    def checkCaption(self, caption, keywords):
+        res = [ele for ele in  keywords if(ele in caption)]
+        print("Caption Checked")
+        return bool(res)
+
+    def likePost(self):
+        likeButton = self.driver.find_element_by_xpath('/html/body/div[4]/div[2]/div/article/div[3]/section[1]/span[1]/button')
+        likeButton.click()
+
+    def savePost(self):
+        saveButton = self.driver.find_element_by_xpath('/html/body/div[4]/div[2]/div/article/div[3]/section[1]/span[3]/div/div/button')
+        saveButton.click()
+
+    def nextPic(self):
+        nex = self.driver.find_element_by_xpath("/html/body/div[4]/div[1]/div/div/a[2]")  
+        nex.click() 
 
 
-    # loads full page so that other data can be loaded
-    def scrollFullPage(self):
-        i = 1
-        SCROLL_PAUSE_TIME = 2
-        # Get scroll height
-        last_height = self.driver.execute_script("return document.body.scrollHeight")
-
-        while True:
-            # Scroll down to bottom
-            self.driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-
-            # Wait to load page
-            sleep(SCROLL_PAUSE_TIME)
-
-            # Calculate new scroll height and compare with last scroll height
-            new_height = self.driver.execute_script("return document.body.scrollHeight")
-            if new_height == last_height:
-                break
-            # Stops code from scrolling indefinietly
-            if i > 2:
-                break
-            last_height = new_height
-            i += 1
-            j = 1
-            sleep(2)
-
-        # Scroll to top
-        self.driver.execute_script("window.scrollTo(0, 0);")
-        sleep(10)
-
-    # opens one caption at a time
-    def openCaptions(self):
-        i = 0
-        while i < 10:
-            # find "more" button after captions
-            moreButton = self.driver.find_element_by_class_name('sXUSN')
-
-            # scrolls next button into view
-            self.driver.execute_script("arguments[0].scrollIntoView();", moreButton)
-            sleep(2)
-
-            # scrolls up a bit so that button is clicked 
-            self.driver.execute_script("window.scrollBy(0,-150);")
-            sleep(2)
-            moreButton.click()
-
-            # scrolls down a bit so that next button can be found
-            self.driver.execute_script("window.scrollBy(0,250);")
-            sleep(2)
-            i += 1
-
-    # opens x amount of captions and saves to text file
-    def gatherCaptions(self, keywords):
-        i = 0
-        finalList = []
-
-        while i < 5:
-
-            # find more button and click
-            moreButton = self.driver.find_element_by_class_name('sXUSN')
-            self.driver.execute_script("arguments[0].scrollIntoView();", moreButton)
-            self.driver.execute_script("window.scrollBy(0,-150);")
-            moreButton.click()
-            sleep(2)
-
-            # find caption text box
-            caption = self.driver.find_element_by_class_name("_8Pl3R").text
-            res = [ele for ele in keywords if(ele in caption)] 
-            if res == True:
-                finalList.append(caption)
-            res = []
-            sleep(5)
-            i += 1
-            sleep(2)
-        
         # write caption to file
-        with open("text_file.txt", "w", encoding='utf-8') as f:
-            for item in finalList:
-                f.write("%s\n" % item)
+#        with open("text_file.txt", "w", encoding='utf-8') as f:
+#            for item in finalList:
+#                f.write("%s\n" % item)
 
-myBot = InstaBot("tkpaddles95@gmail.com", pw)
-#myBot.scrollFullPage()
-#myBot.openCaptions()
-myBot.gatherCaptions(keywords)
+myBot = InstaBot("sapirdooley", pw)
+myBot.main()
