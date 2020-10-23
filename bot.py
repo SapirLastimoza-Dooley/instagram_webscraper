@@ -8,11 +8,12 @@ from dataclasses import dataclass
 from datetime import datetime
 import json
 
+# Holds data from post
 @dataclass
 class IgPost:
-    post_id: str
-    op: str
-    caption: str
+    post_id: str      
+    op: str             
+    caption: str        
     num_likes: int
     num_hashtags: int
     hashtags: list    
@@ -25,7 +26,7 @@ class instagram_bot():
     def __init__(self, driver):
         self.driver = driver
 
-    # Startup Functions
+    
     def close_browser(self):
         self.driver.close()
 
@@ -59,10 +60,8 @@ class instagram_bot():
                 continue
         return post_links
 
-    # Action Functions
     def open_link(self, link):
         self.driver.get(link)
-
 
     def like_post(self):
         d = self.driver
