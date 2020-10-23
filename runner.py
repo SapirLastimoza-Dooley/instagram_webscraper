@@ -47,8 +47,8 @@ if __name__ == '__main__':
             continue
 
         if filtered_post.matches_keyword == False:
-#            post_tracker.matched_post_counter += 1
-#            ig.save_post()
+            post_tracker.matched_post_counter += 1
+            ig.save_post()
             post_tracker.save_counter += 1
             if post.location != '':
                 lat, lon = p.find_lat_long(post)
@@ -61,7 +61,7 @@ if __name__ == '__main__':
         if like == True:
             post_tracker.like_counter += 1
             utils.random_sleep()
-            
+
     today = datetime.now()
     today = datetime.strftime('%m-%d')
     with open(f"matched_posts_{today}.json","w") as f:
