@@ -8,12 +8,12 @@ from post_parser import ig_post, post_parser
 from post_filter import filtered_post, post_filter
 from post_tracker import post_tracker
 from config import config
-
-
+from datetime import datetime
 
 import utils
 import random
 import json
+
 
 
 if __name__ == '__main__':
@@ -62,8 +62,8 @@ if __name__ == '__main__':
             post_tracker.like_counter += 1
             utils.random_sleep()
 
- 
-    with open("matched_posts.json","w") as f:
+    today = datetime.strftime('%m-%d')
+    with open(f"matched_posts_{today}.json","w") as f:
         json.dump(post_tracker.saved_posts,f, indent = 4)    
     ig.log_out()
 
