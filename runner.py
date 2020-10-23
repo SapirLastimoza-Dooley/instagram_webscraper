@@ -61,7 +61,8 @@ if __name__ == '__main__':
         if like == True:
             post_tracker.like_counter += 1
             utils.random_sleep()
-
+            
+    today = datetime.now()
     today = datetime.strftime('%m-%d')
     with open(f"matched_posts_{today}.json","w") as f:
         json.dump(post_tracker.saved_posts,f, indent = 4)    
