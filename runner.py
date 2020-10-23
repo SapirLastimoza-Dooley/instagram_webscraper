@@ -8,7 +8,7 @@ from post_parser import ig_post, post_parser
 from post_filter import filtered_post, post_filter
 from post_tracker import post_tracker
 from config import config
-from utils import random_sleep
+from utils import random_sleep 
 
 import random
 import json

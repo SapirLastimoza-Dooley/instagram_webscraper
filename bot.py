@@ -42,7 +42,7 @@ class instagram_bot():
         random_sleep()
         d.find_element_by_xpath('//button[contains(text(), "Not Now")]').click()
         sleep(8)
-
+ 
     def fetch_posts(self, num_posts):
         d = self.driver
         post_links = []

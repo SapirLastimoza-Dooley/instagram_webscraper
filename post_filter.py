@@ -8,7 +8,7 @@ from bot import instagram_bot
 @dataclass
 class filtered_post:
     matches_keyword: bool
-    is_new_post: bool
+    is_new_post: bool 
     is_low_likes: bool
     is_low_hashtags: bool
     does_post_exist: bool

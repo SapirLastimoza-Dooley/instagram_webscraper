@@ -1,3 +1,3 @@
 tamu_hashtags = ['tamu24', 'tamu23', 'tamu22', 'tamu21', 'tamu', 'aggieland', 'gigem', 'AggieLand', 'GigEm', 'AggieFootball', 'Aggies', 'AggieRing', 'aggiebound', 'sec', 'gigs']
 greek_hashtags =['whygorho', 'whygospo', 'whyichoseldy', 'rushrho', 'rushldy','rushldpsi', 'rushsigmas', 'rushakdphi', 'rushadk', 'rushlambdas', 'lambdaphiepsilon', 'rushsyz', 'sigmapsizeta',
-                    'rushkpl', 'kappaphilambda', 'pialphaphi' , 'rushsopi', 'sigmaomicronpi', 'chideltatheta', 'rushchidelts', 'alphaxi', 'bidday', 'gogreek', 'bidweek' ]
+                    'rushkpl', 'kappaphilambda', 'pialphaphi' , 'rushsopi', 'sigmaomicronpi', 'chideltatheta', 'rushchidelts', 'alphaxi', 'bidday', 'gogreek', 'bidweek' ] 

@@ -64,7 +64,7 @@ class post_parser(instagram_bot):
         try:
             location = self.driver.find_element_by_class_name('O4GlU').text
         except NoSuchElementException:
-            return ''
+            return '' 
         return location
 
     def find_date(self):
