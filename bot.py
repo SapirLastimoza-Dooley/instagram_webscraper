@@ -4,7 +4,7 @@ from selenium.webdriver.common.action_chains import ActionChains
 from selenium.common.exceptions import NoSuchElementException    
 from utils import random_sleep
 from time import sleep
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from datetime import datetime
 import json
 

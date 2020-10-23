@@ -3,11 +3,13 @@ from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import NoSuchElementException 
 
 from dataclasses import dataclass
+from dataclasses_json import dataclass_json
 from datetime import datetime
 import config
 
 from bot import instagram_bot
 
+@dataclass_json
 @dataclass
 class ig_post:
     post_id: str
