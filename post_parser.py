@@ -4,6 +4,7 @@ from selenium.common.exceptions import NoSuchElementException
 from dataclasses import dataclass, field
 from datetime import datetime
 from dataclass_csv import DataclassReader, dateformat
+from utils import random_sleep
 
 
 import config
@@ -21,6 +22,8 @@ class ig_post:
     location: str
     date: datetime = field(metadata={'dateformat': '%Y-%m-%d'})
     location: str
+    lat: str
+    lon: str
 
 class post_parser(instagram_bot):
 
@@ -81,6 +84,16 @@ class post_parser(instagram_bot):
             return time_now        
         return post_date
 
+    def find_lat_long(self, post):
+        d = self.driver
+        location = post.location
+        d.get('https://www.google.com/')
+        d.find_element_by_xpath('/html/body/div[2]/div[3]/form/div[2]/div[1]/div[1]/div/div[2]/input').send_keys(location + ' latitude and longitutde' + Keys.RETURN)
+        random_sleep()
+        text = d.find_element_by_xpath('/html/body/div[8]/div[2]/div[10]/div[1]/div[2]/div/div[2]/div[2]/div/div/div[1]/div[1]/div[1]/div[1]/div/div[2]/div/div/div/div[1]').text
+        lat = text[0:7]
+        lon = text[12:19]
+        return lat, lon
         
     def parse_post(self, post_link):
         op = self.save_op()
@@ -91,6 +104,8 @@ class post_parser(instagram_bot):
         num_hashtags = len(hashtags)
         location = self.save_location()
         date = self.find_date()
+        lat = ''
+        lon = ''
         
-        return ig_post(post_id, op, caption, num_likes, num_hashtags, hashtags, location, date)
+        return ig_post(post_id, op, caption, num_likes, num_hashtags, hashtags, location, date, lat, lon)
 

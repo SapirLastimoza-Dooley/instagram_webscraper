@@ -46,12 +46,16 @@ if __name__ == '__main__':
             utils.random_sleep()
             continue
 
-        if filtered_post.matches_keyword == True:
-            post_tracker.matched_post_counter += 1
-            ig.save_post()
+        if filtered_post.matches_keyword == False:
+#            post_tracker.matched_post_counter += 1
+#            ig.save_post()
             post_tracker.save_counter += 1
-            post = utils.convert_to_json(post)
-            post_tracker.saved_posts.update(post) 
+            if post.location != '':
+                lat, lon = p.find_lat_long(post)
+                setattr(post, 'lat', lat)
+                setattr(post, 'lon', lon)
+            post_as_json = utils.convert_to_json(post)
+            post_tracker.saved_posts.update(post_as_json) 
             
         like = ig.like_post()
         if like == True:
