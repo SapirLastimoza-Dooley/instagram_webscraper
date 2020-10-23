@@ -46,7 +46,7 @@ if __name__ == '__main__':
             utils.random_sleep()
             continue
 
-        if filtered_post.matches_keyword == False:
+        if filtered_post.matches_keyword == True:
             post_tracker.matched_post_counter += 1
             ig.save_post()
             post_tracker.save_counter += 1
