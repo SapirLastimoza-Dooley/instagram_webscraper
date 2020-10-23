@@ -2,11 +2,9 @@ from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException    
 from datetime import datetime, timedelta
 from dataclasses import dataclass
-from dataclasses_json import dataclass_json
 from config import config
 from bot import instagram_bot
 
-@dataclass_json
 @dataclass
 class filtered_post:
     matches_keyword: bool

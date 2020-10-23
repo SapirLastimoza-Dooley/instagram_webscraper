@@ -1,15 +1,15 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import NoSuchElementException 
-
-from dataclasses import dataclass
-from dataclasses_json import dataclass_json
+from dataclasses import dataclass, field
 from datetime import datetime
+from dataclass_csv import DataclassReader, dateformat
+
+
 import config
 
 from bot import instagram_bot
 
-@dataclass_json
 @dataclass
 class ig_post:
     post_id: str
@@ -19,7 +19,7 @@ class ig_post:
     num_hashtags: int
     hashtags: list    
     location: str
-    date: datetime
+    date: datetime = field(metadata={'dateformat': '%Y-%m-%d'})
     location: str
 
 class post_parser(instagram_bot):

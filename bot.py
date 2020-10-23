@@ -8,19 +8,6 @@ from dataclasses import dataclass, field
 from datetime import datetime
 import json
 
-# Holds data from post
-@dataclass
-class IgPost:
-    post_id: str      
-    op: str             
-    caption: str        
-    num_likes: int
-    num_hashtags: int
-    hashtags: list    
-    location: str
-    date: datetime
-
-
 class instagram_bot():
 
     def __init__(self, driver):
