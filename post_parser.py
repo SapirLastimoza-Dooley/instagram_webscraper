@@ -88,11 +88,22 @@ class post_parser(instagram_bot):
         d = self.driver
         location = post.location
         d.get('https://www.google.com/')
-        d.find_element_by_xpath('/html/body/div[2]/div[3]/form/div[2]/div[1]/div[1]/div/div[2]/input').send_keys(location + ' latitude and longitutde' + Keys.RETURN)
+        d.find_element_by_xpath('/html/body/div[2]/div[3]/form/div[2]/div[1]/div[1]/div/div[2]/input').send_keys(location + ' latitude and longitude' + Keys.RETURN)
         random_sleep()
-        text = d.find_element_by_xpath('/html/body/div[8]/div[2]/div[10]/div[1]/div[2]/div/div[2]/div[2]/div/div/div[1]/div[1]/div[1]/div[1]/div/div[2]/div/div/div/div[1]').text
-        lat = text[0:7]
-        lon = text[12:19]
+        lat = ''
+        lon = ''
+        try:
+            text = d.find_element_by_xpath('//div[@class=\'Z0LcW XcVN5d\']').text
+            lat = text[0:7]
+            lon = text[12:19]
+        except NoSuchElementException:
+            try:
+                data = d.find_element_by_xpath('//*[@data-attrid="kc:/location/location:coordinates"]')
+                text = data.get_attribute('data-entityname')
+                lat = text[0:7]
+                lon = text[12:19]
+            except NoSuchElementException:
+                return lat, lon
         return lat, lon
         
     def parse_post(self, post_link):
