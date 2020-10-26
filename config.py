@@ -5,10 +5,8 @@ from typing import List
  
 @dataclass
 class config:
-    username: str = 'tk_paddles'           # username
-    password: str = '05020314vs'           # password
-#    username: str = 'betatauomega'           # username
-#    password: str = 'StrengthThroughUnity!'           # password
+    username: str = ''           # username
+    password: str = ''           # password
     my_link = 'https://www.instagram.com/' + username + '/'
     num_posts: int = 500                    # number of posts to gather
     max_post_likes: int = 1000              # max likes of post
