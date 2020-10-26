@@ -39,15 +39,14 @@ if __name__ == '__main__':
         filtered_post = f.filter_post(post, config, crossing_keywords)
         utils.random_sleep()
 
-        if filtered_post.is_new_post == False:
-            post_tracker.already_liked_counter += 1
-            if post_tracker.already_liked_counter > config.max_already_liked:
-                break
+        if post_tracker.already_liked_counter > config.max_already_liked:
+            break
 
         if filtered_post.does_post_exist == False or \
             filtered_post.is_low_hashtags == False or \
                 filtered_post.is_low_likes == False or \
-                    filtered_post.is_new_post == False:
+                    filtered_post.is_new_post == False or \
+                        post.op == config.my_link:
             utils.random_sleep()
             continue
 
@@ -70,6 +69,9 @@ if __name__ == '__main__':
         if like == True:
             post_tracker.like_counter += 1
             utils.random_sleep()
+        else:
+            post_tracker.already_liked_counter += 1
+            print(post_tracker.already_liked_counter)
 
 #    today = datetime.now()
 #    today = datetime.strftime('%m-%d')
@@ -78,7 +80,7 @@ if __name__ == '__main__':
     ig.log_out()
 
     print(f'{post_tracker.like_counter} posts liked.')
-    print(f'{post_tracker.saved_posts} posts saved.')
+    print(f'{post_tracker.save_counter} posts saved.')
     
 
 
