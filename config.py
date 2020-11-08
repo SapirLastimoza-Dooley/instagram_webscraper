@@ -5,12 +5,8 @@ from datetime import datetime
 @dataclass
 class config:
     # basic user info
-#    username: str = 'sapirdooley'                                       # username
-#    password: str = 'T313v1510n!'                                       # password
-    username: str = 'tk_paddles'                                       # username
-    password: str = '05020314vs'                                       # password
-#    username: str = 'betatauomega'                                       # username
-#    password: str = 'StrengthThroughUnity!'                                       # password
+#    username: str = ''                                       # username
+#    password: str = ''                                       # password
     
     user_profile: str = 'https://www.instagram.com/' + username + '/'  # link to user profile
 
