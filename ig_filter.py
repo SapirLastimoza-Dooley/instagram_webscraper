@@ -2,9 +2,12 @@ from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException    
 from datetime import datetime, timedelta
 from dataclasses import dataclass
-from config import config
+from config import config, post_tracker
 from bot import instagram_bot
+from dataclasses import dataclass
+from utils import random_sleep
 
+# saves information on filtered posts
 @dataclass
 class filtered_post:
     matches_keyword: bool
@@ -12,23 +15,18 @@ class filtered_post:
     is_low_likes: bool
     is_low_hashtags: bool
     does_post_exist: bool
+    is_user_post: bool
 
-class post_filter(instagram_bot):
+class ig_filter(instagram_bot):
 
     def __init__ (self, driver):
         super().__init__(driver)
-
-    def filter_caption(self, caption, keywords):
-        try:
-            result = [i for i in keywords if(i in caption)]
-        except NoSuchElementException:
-            return False            
-        return bool(result)
 
     def filter_date(self, post_date, max_post_age):
         try:
             delta = datetime.now() - post_date
             if delta.days > max_post_age:
+                post_tracker.old_post_counter += 1
                 return True
         except NoSuchElementException:
             return False
@@ -52,10 +50,31 @@ class post_filter(instagram_bot):
             return True
         return False
 
+    def is_user_post(self, post_author, user_profile):
+        if post_author == user_profile:
+            return True
+        else:
+            return False
+
     def filter_post(self, post, config, keywords):
-        matches_keyword = self.filter_caption(post.caption, keywords)
+        matches_keyword = self.filter_text(post.caption, keywords)
         is_new_post = self.filter_date(post.date, config.max_post_age)
-        is_low_likes = self.filter_likes(post.num_likes, config.max_likes)
+        is_low_likes = self.filter_likes(post.num_likes, config.max_post_likes)
         is_low_hashtags =  self.filter_hashtags(post.num_hashtags, config.max_hashtags)
         does_post_exist = self.find_post_exists()
-        return filtered_post(matches_keyword, is_new_post, is_low_likes, is_low_hashtags, does_post_exist)
+        is_user_post = self.is_user_post(post.author, config.user_profile)
+        return filtered_post(matches_keyword, is_new_post, is_low_likes, is_low_hashtags, does_post_exist, is_user_post)
+
+    def is_relevant_post(self, filtered_post):
+        if filtered_post.does_post_exist == False or \
+            filtered_post.is_low_hashtags == False or \
+                filtered_post.is_low_likes == False or \
+                    filtered_post.is_new_post == False or \
+                        filtered_post.is_user_post == True:
+            random_sleep()
+            return False
+        else:
+            return True
+    
+
+

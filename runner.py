@@ -1,86 +1,83 @@
 from selenium import webdriver
 
-from hashtags import greek_hashtags
-from key_words import crossing_keywords
-
 from bot import instagram_bot
-from post_parser import ig_post, post_parser
-from post_filter import filtered_post, post_filter
-from post_tracker import post_tracker
-from config import config
-from datetime import datetime
+from ig_parser import ig_parser
+from ig_filter import ig_filter
+from config import config, post_tracker as pt
+from scrape_feed import scrape_feed
+from unfollow import unfollower
+from time import sleep
 
-import utils
-import random
 import json
+import geojson
+from geojson import FeatureCollection, dump
+import arcgis.gis
+from arcgis.gis import GIS
+from arcgis.features import FeatureLayer
+
 
 
 
 if __name__ == '__main__':
 
-    username = config.username
-    password = config.password
-
     driver = webdriver.Chrome()
     ig = instagram_bot(driver)
-    p = post_parser(driver)
-    f = post_filter(driver)
-    post_tracker = post_tracker()
+    p = ig_parser(driver)
+    f = ig_filter(driver)
+    sf = scrape_feed(driver, p, f)
+    uf = unfollower(driver)
 
-    ig.login(username, password)
-    utils.random_sleep()
+    ig.login(config.username, config.password)
+    
+    sf.scrape_feed()
 
-    post_links = ig.fetch_posts(config.num_posts)
-    utils.random_sleep()
+    # continues function until limitations are met
+#    while True:
+#        if pt.like_counter < config.num_likes:
+#            try:
+#                sf.scrape_feed()
+#                print(f'{pt.like_counter} posts liked.')
+#                print(f'{pt.save_counter} posts saved.')
+#                sleep(360)
+#            except Exception:
+#                pass
+#        if pt.unfollow_counter < config.num_unfollows:
+#            try:
+#                uf.unfollow()
+#                print(f'{pt.follow_counter} accounts followed.')
+#                print(f'{pt.unfollow_counter} accounts unfollowed.')
+#            except Exception:
+#                pass
 
-    for i, post_link in enumerate(post_links):
-        ig.open_link(post_link)
-        post = p.parse_post(post_link)
-        filtered_post = f.filter_post(post, config, crossing_keywords)
-        utils.random_sleep()
+    gis = GIS("https://www.arcgis.com", username="sapirdooley_tamu4", password="xyxzeq-7fovBi-jebniq")
+    content = arcgis.gis.ContentManager(gis)
 
-        if post_tracker.already_liked_counter > config.max_already_liked:
-            break
+    feature_collection = FeatureCollection(pt.saved_posts)
 
-        if filtered_post.does_post_exist == False or \
-            filtered_post.is_low_hashtags == False or \
-                filtered_post.is_low_likes == False or \
-                    filtered_post.is_new_post == False or \
-                        post.op == config.my_link:
-            utils.random_sleep()
-            continue
+    with open('myfile.geojson', 'w') as f:
+        dump(feature_collection, f, indent = 4)
 
-        if filtered_post.matches_keyword == True:
-            post_tracker.matched_post_counter += 1
-            ig.save_post()
-            post_tracker.save_counter += 1
-            if post.location != '':
-                try:
-                    lat, lon = p.find_lat_long(post)
-                    setattr(post, 'lat', lat)
-                    setattr(post, 'lon', lon)
-                except ValueError:
-                    pass
-        post_as_json = utils.convert_to_json(post)
-        enumerated_post = {i:post_as_json}
-        post_tracker.saved_posts.update(enumerated_post) 
-            
-        like = ig.like_post()
-        if like == True:
-            post_tracker.like_counter += 1
-            utils.random_sleep()
-        else:
-            post_tracker.already_liked_counter += 1
-            print(post_tracker.already_liked_counter)
-
-#    today = datetime.now()
-#    today = datetime.strftime('%m-%d')
-    with open(f"matched_posts.json","w") as f:
-        json.dump(post_tracker.saved_posts,f, indent = 4)    
+    geojson_path = 'myfile.geojson'
+    geojson_properties = {
+        'title':'Potential Customers',
+        'description':'Based on webscraping data from Instagram',
+        'tags':'arcgis, python, TK, GeoJSON,', 
+        'type': 'GeoJson',
+        'spatialReference': {
+            'wkid': 4140
+        }
+        }
+    geojson_item = content.add(geojson_properties, geojson_path)
+    geojson_feature = geojson_item.publish()
+    
+    ig.open_link('https://www.instagram.com/')
     ig.log_out()
+    ig.close_browser()
 
-    print(f'{post_tracker.like_counter} posts liked.')
-    print(f'{post_tracker.save_counter} posts saved.')
+    print(f'{pt.like_counter} posts liked.')
+    print(f'{pt.save_counter} posts saved.')
+    print(f'{pt.follow_counter} accounts followed.')
+    print(f'{pt.unfollow_counter} accounts unfollowed.')
     
 
 
