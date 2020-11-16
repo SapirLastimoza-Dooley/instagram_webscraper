@@ -168,18 +168,18 @@ class instagram_bot():
         d.get('https://www.google.com/')                                                                        # opens google
         random_sleep()
         d.find_element_by_xpath('/html/body/div[2]/div[3]/form/div[2]/div[1]/div[1]/div/div[2]/input').send_keys(location + ' latitude and longitude' + Keys.RETURN)   
-        sleep(2)                                   
+        sleep(1)                                   
         try:
             text = d.find_element_by_xpath('//div[@class=\'Z0LcW XcVN5d\']').text                               # lat and lon shows up in two forms -
             res = True
-            sleep(2)
+            sleep(1)
         except NoSuchElementException:
             res = False
             try:
                 data = d.find_element_by_xpath('//*[@data-attrid="kc:/location/location:coordinates"]')         # - so these account for both forms
                 text = data.get_attribute('data-entityname')
                 res = True
-                sleep(2)
+                sleep(1)
             except NoSuchElementException:
                 res = False
         if res == False:

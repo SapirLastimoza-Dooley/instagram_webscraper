@@ -5,14 +5,11 @@ from datetime import datetime
 @dataclass
 class config:
     # basic user info
-<<<<<<< HEAD
 
     insta_username = input('Enter your Instagram username: ')
     insta_password = input('Enter your Instagram password: ')
     arcgis_username = input('Enter your ArcGIS Online username: ')
     arcgis_password = input('Enter your ArcGIS Online password: ')
-=======
->>>>>>> 9ae55ef55ed86ad5684b00a720fbd39b653f32c8
     
     user_profile: str = 'https://www.instagram.com/' + insta_username + '/'  # link to user profile
 
