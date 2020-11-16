@@ -21,6 +21,7 @@ class ig_post:
     lat: str            
     lon: str    
 
+# saves information from parsed accounts
 @dataclass
 class profile:
     profile_link: str
@@ -35,13 +36,13 @@ class ig_parser(instagram_bot):
 
     def post_parser(self, post_link: str):
         post_link = post_link
-        author = self.save_link(xpaths.author)
-        caption = self.save_text(xpaths.caption)
-        num_likes = self.save_number(xpaths.likes)
-        hashtags = self.save_links(xpaths.hashtags, '.com/explore/')
+        author = self.save_link(xpaths.author)                          # saves link to author
+        caption = self.save_text(xpaths.caption)                        # saves caption text
+        num_likes = self.save_number(xpaths.likes)                      # saves number of likes
+        hashtags = self.save_links(xpaths.hashtags, '.com/explore/')    # saves list of hashtags
         num_hashtags = len(hashtags)
-        date = self.save_date(xpaths.date)
-        location = self.save_text(xpaths.location)
+        date = self.save_date(xpaths.date)                              # saves date of post
+        location = self.save_text(xpaths.location)                      # saves location tag text of post
         lat = ''
         lon = ''
         return ig_post(post_link, author, caption, num_likes, hashtags, num_hashtags, date, location, lat, lon)

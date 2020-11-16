@@ -22,14 +22,17 @@ class ig_filter(instagram_bot):
     def __init__ (self, driver):
         super().__init__(driver)
 
-    def filter_date(self, post_date, max_post_age):
+    def filter_date(self, post, post_date, max_post_age):
         try:
-            delta = datetime.now() - post_date
+            delta = datetime.now() - post_date          # finds time between post is made and now
             if delta.days > max_post_age:
                 post_tracker.old_post_counter += 1
-                return True
+                res = False
+            else:
+                res = True
         except NoSuchElementException:
-            return False
+            pass
+        return res
         
     def filter_likes(self,post_likes, max_likes):
         if post_likes > max_likes:
@@ -58,11 +61,19 @@ class ig_filter(instagram_bot):
 
     def filter_post(self, post, config, keywords):
         matches_keyword = self.filter_text(post.caption, keywords)
-        is_new_post = self.filter_date(post.date, config.max_post_age)
+        is_new_post = self.filter_date(post, post.date, config.max_post_age)
         is_low_likes = self.filter_likes(post.num_likes, config.max_post_likes)
         is_low_hashtags =  self.filter_hashtags(post.num_hashtags, config.max_hashtags)
         does_post_exist = self.find_post_exists()
         is_user_post = self.is_user_post(post.author, config.user_profile)
+
+        print(f'Matches keyword: {matches_keyword}')
+        print(f'Is new post: {is_new_post}')
+        print(f'Is low likes: {is_low_likes}')
+        print(f'Is low hashtags: {is_low_hashtags}')
+        print(f'Post exists: {does_post_exist}')
+        print(f'Is user post: {is_user_post}')
+        print()
         return filtered_post(matches_keyword, is_new_post, is_low_likes, is_low_hashtags, does_post_exist, is_user_post)
 
     def is_relevant_post(self, filtered_post):
@@ -72,9 +83,36 @@ class ig_filter(instagram_bot):
                     filtered_post.is_new_post == False or \
                         filtered_post.is_user_post == True:
             random_sleep()
-            return False
+            res = False
         else:
-            return True
-    
+            res = True
+        if res == False:
+            print(f'Post is not relevant.')
+        else:
+            print(f'Post is relevant.')
+        print('-------------------------------------------------------------------------------')
+        return res
+#
+#    def is_relevant_post(self, filtered_post):
+#        if filtered_post.does_post_exist == False:
+#            print('Post does not exist')
+#            res = False
+#        elif filtered_post.is_low_hashtags == False:
+#            res = False
+#        elif filtered_post.is_low_likes == False:
+#            res = False
+#        elif filtered_post.is_new_post == False:
+#            res = False
+#        elif filtered_post.is_user_post == True:
+#            res = False
+#        else:
+#            res = True
+#        
+#        if res == False:
+#            print('Post is not relevant.')
+#        else:
+#            print('Post is relevant.')
+#        return res
+
 
 

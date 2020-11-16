@@ -7,36 +7,56 @@ class config:
     # basic user info
 #    username: str = 'sapirdooley'                                       # username
 #    password: str = 'T313v1510n!'                                       # password
-    username: str = 'tk_paddles'                                       # username
-    password: str = '05020314vs'                                       # password
+#    username: str = 'tk_paddles'                                       # username
+#    password: str = '05020314vs'                                       # password
 #    username: str = 'betatauomega'                                       # username
 #    password: str = 'StrengthThroughUnity!'                                       # password
+    insta_username = input('Enter your Instagram username: ')
+    insta_password = input('Enter your Instagram password: ')
+    arcgis_username = input('Enter your ArcGIS Online username: ')
+    arcgis_password = input('Enter your ArcGIS Online password: ')
     
-    user_profile: str = 'https://www.instagram.com/' + username + '/'  # link to user profile
+    user_profile: str = 'https://www.instagram.com/' + insta_username + '/'  # link to user profile
 
     # parameters for bot functions
-    num_posts: int = 500      # number of posts to gather
-    num_likes: int = 500        # number of likes to perform
-    num_follows: int = 75
-    num_unfollows: int = 75
+#    num_posts: int = 500      # number of posts to gather
+#    num_likes: int = 500        # number of likes to perform
+#    num_follows: int = 75
+#    num_unfollows: int = 75
+#    save_post: bool = True
+#    like_post: bool = True
+
+    num_posts = int(input('How many posts would you like to scrape?: '))
+    like_post = input('Would you like to like all posts? (y/n): ')
+    if like_post == 'y':
+        like_post = True
+        num_likes = int(input('How many likes would you like to perform?: '))  
+    else:
+        like_post = False
+    save_post = input('Would you like to save matched posts? (y/n): ')
+    if save_post == 'y':
+        save_post = True
+    else:
+        save_post = False
 
     # parameters for bot filter
     max_post_likes: int = 1000  # skips posts with more likes
     max_hashtags: int = 15      # skips posts with more hashtags
-    max_already_liked: int = 30 # stops when all posts have been liked
-    max_old_posts: int = 15     # stops when posts are all old
-    max_post_age: int = 7      # number of days qualifying post as old      
+    max_already_liked: int = 15 # stops when all posts have been liked
+    max_old_posts: int = 30     # stops when posts are all old
+    max_post_age: int = 30      # number of days qualifying post as old      
 
 # tracks progress of bot
 class post_tracker: 
-    like_counter: int = 0            # tracks number of posts liked
-    save_counter: int = 0            # tracks number of posts saved
-    follow_counter: int = 0
-    unfollow_counter: int = 0
-    already_liked_counter: int = 0   # tracks number of reccuring posts already liked
-    old_post_counter: int = 0        # tracks number of reccuring old posts 
-    matched_post_counter: int = 0
-    saved_posts: list = []
+    like_counter: int = 0               # tracks number of posts liked
+    save_counter: int = 0               # tracks number of posts saved
+    follow_counter: int = 0             # tracks number of follows performed
+    unfollow_counter: int = 0           # tracks number of unfollows performed
+    already_liked_counter: int = 0      # tracks number of reccuring posts already liked
+    old_post_counter: int = 0           # tracks number of reccuring old posts 
+    matched_post_counter: int = 0       # tracks number of matched posts found
+    posts_with_location: list = []      # posts saved with location tag
+    all_posts: list = []                # all posts matching keywords
 
 @dataclass
 class xpaths:
@@ -64,9 +84,9 @@ class xpaths:
     # profile xpaths
     follow_button: str = '//button[contains(text(), "Follow")]'
     unfollow_button: str = '//button[contains(text(), "Unfollow")]'
-    followers_button: str = f'//a[@href=\'/{config.username}/followers/\']'
+    followers_button: str = f'//a[@href=\'/{config.insta_username}/followers/\']'
     followers_count: str = '/html/body/div[1]/section/main/div/header/section/ul/li[2]/a/span'
-    following_button: str = f'//a[@href=\'/{config.username}/following/\']'
+    following_button: str = f'//a[@href=\'/{config.insta_username}/following/\']'
     following_count: str = '/html/body/div[1]/section/main/div/header/section/ul/li[3]/a/span'
     follow_back_button: str = '//button[contains(text(), "Follow Back")]'
     bio: str = '/html/body/div[1]/section/main/div/header/section/div[2]/span'
@@ -78,7 +98,10 @@ class xpaths:
     profile_link: str = '//a[@class =\'FPmhX notranslate  _0imsa \']'
 
 # post filter keywords
-post_keywords = ['crossing', 'crossed', 'installation', 'probate', 'introduce']
+#post_keywords = ['crossing', 'crossed', 'installation', 'probate', 'introduce']
+post_keywords_str = input('What keywords are we looking for? (seperate with comma): ')
+post_keywords = list(post_keywords_str.split(",")) 
+print('-------------------------------------------------------------------------------')
 
 # profile location keywords
 location_keywords = ['Texas']
