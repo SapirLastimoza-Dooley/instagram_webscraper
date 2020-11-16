@@ -5,27 +5,18 @@ from datetime import datetime
 @dataclass
 class config:
     # basic user info
-#    username: str = 'sapirdooley'                                       # username
-#    password: str = 'T313v1510n!'                                       # password
-#    username: str = 'tk_paddles'                                       # username
-#    password: str = '05020314vs'                                       # password
-#    username: str = 'betatauomega'                                       # username
-#    password: str = 'StrengthThroughUnity!'                                       # password
+<<<<<<< HEAD
+
     insta_username = input('Enter your Instagram username: ')
     insta_password = input('Enter your Instagram password: ')
     arcgis_username = input('Enter your ArcGIS Online username: ')
     arcgis_password = input('Enter your ArcGIS Online password: ')
+=======
+>>>>>>> 9ae55ef55ed86ad5684b00a720fbd39b653f32c8
     
     user_profile: str = 'https://www.instagram.com/' + insta_username + '/'  # link to user profile
 
     # parameters for bot functions
-#    num_posts: int = 500      # number of posts to gather
-#    num_likes: int = 500        # number of likes to perform
-#    num_follows: int = 75
-#    num_unfollows: int = 75
-#    save_post: bool = True
-#    like_post: bool = True
-
     num_posts = int(input('How many posts would you like to scrape?: '))
     like_post = input('Would you like to like all posts? (y/n): ')
     if like_post == 'y':
