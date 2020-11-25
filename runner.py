@@ -28,8 +28,8 @@ if __name__ == '__main__':
 #    uf.unfollow()
 
     # save to arcGIS Online
-    save_to_arcgis_online(config.arcgis_username, config.arcgis_password)
-   # create_map()
+#    save_to_arcgis_online(config.arcgis_username, config.arcgis_password)
+#    create_map()
     
     ig.open_link('https://www.instagram.com/')
     ig.log_out()

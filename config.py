@@ -30,7 +30,7 @@ class config:
     # parameters for bot filter
     max_post_likes: int = 1000  # skips posts with more likes
     max_hashtags: int = 15      # skips posts with more hashtags
-    max_already_liked: int = 15 # stops when all posts have been liked
+    max_already_liked: int = 30 # stops when all posts have been liked
     max_old_posts: int = 30     # stops when posts are all old
     max_post_age: int = 30      # number of days qualifying post as old      
 
@@ -68,6 +68,8 @@ class xpaths:
     hashtags: str = '//a[@class=\' xil3i\']'
     date: str = '//time[@class=\'_1o9PC Nzb55\']'
     location: str = '//a[@class=\'O4GlU\']'
+    comment: str = '//*[@aria-label="Add a comment…"]'
+    post_button: str = '/html/body/div[1]/section/main/div/div[1]/article/div[3]/section[3]/div/form/button'
 
     # profile xpaths
     follow_button: str = '//button[contains(text(), "Follow")]'
@@ -90,7 +92,7 @@ class xpaths:
 post_keywords_str = input('What keywords are we looking for? (seperate with comma): ')
 post_keywords = list(post_keywords_str.split(",")) 
 print('-------------------------------------------------------------------------------')
-
+# installation, install, present, presentation, congratulate, congratulations, kiddos, fall 20, spring 20, fall '20, spring '20, welcome, welcoming 
 # profile location keywords
 location_keywords = ['Texas']
 

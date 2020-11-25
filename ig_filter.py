@@ -11,6 +11,7 @@ from utils import random_sleep
 @dataclass
 class filtered_post:
     matches_keyword: bool
+    matched_keyword: list
     is_new_post: bool 
     is_low_likes: bool
     is_low_hashtags: bool
@@ -60,7 +61,8 @@ class ig_filter(instagram_bot):
             return False
 
     def filter_post(self, post, config, keywords):
-        matches_keyword = self.filter_text(post.caption, keywords)
+        matches_keyword = bool(self.filter_text(post.caption, keywords))
+        matched_keyword = self.filter_text(post.caption, keywords)
         is_new_post = self.filter_date(post, post.date, config.max_post_age)
         is_low_likes = self.filter_likes(post.num_likes, config.max_post_likes)
         is_low_hashtags =  self.filter_hashtags(post.num_hashtags, config.max_hashtags)
@@ -68,13 +70,14 @@ class ig_filter(instagram_bot):
         is_user_post = self.is_user_post(post.author, config.user_profile)
 
         print(f'Matches keyword: {matches_keyword}')
+        print(f'Keyword found: {matched_keyword}')
         print(f'Is new post: {is_new_post}')
         print(f'Is low likes: {is_low_likes}')
         print(f'Is low hashtags: {is_low_hashtags}')
         print(f'Post exists: {does_post_exist}')
         print(f'Is user post: {is_user_post}')
         print()
-        return filtered_post(matches_keyword, is_new_post, is_low_likes, is_low_hashtags, does_post_exist, is_user_post)
+        return filtered_post(matches_keyword, matched_keyword, is_new_post, is_low_likes, is_low_hashtags, does_post_exist, is_user_post)
 
     def is_relevant_post(self, filtered_post):
         if filtered_post.does_post_exist == False or \

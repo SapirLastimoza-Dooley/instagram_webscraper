@@ -4,21 +4,21 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                -95.3597,
-                29.7531
+                -83.29,
+                30.8466
             ]
         },
         "properties": {
-            "post_link": "https://www.instagram.com/p/CHolCcxJYkpH8utniZ9Y_6X5WNt40rdECZ5y2o0/",
-            "author": "https://www.instagram.com/joyceli98/",
-            "caption": "joyceli98  3m",
-            "num_likes": 9,
+            "post_link": "https://www.instagram.com/p/CH8uDJHgqPr/",
+            "author": "https://www.instagram.com/nico_corona/",
+            "caption": "nico_corona as a prophyte, i'm excited to see my chapter go from ten to 33. as a founder, i'm tiredt. welcome to r.e.n.e.g.a.d.e. rho epsilon, zeta line! 8h",
+            "num_likes": 0,
             "hashtags": [],
             "num_hashtags": 0,
-            "date": "2020-11-16T",
-            "location": "discovery green",
-            "lat": 29.7531,
-            "lon": -95.3597
+            "date": "2020-11-23T",
+            "location": "valdosta state university",
+            "lat": 30.8466,
+            "lon": -83.29
         }
     },
     {
@@ -26,21 +26,21 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                -95.8298,
-                30.2562
+                -98.6189,
+                29.5827
             ]
         },
         "properties": {
-            "post_link": "https://www.instagram.com/p/CHoQoYYJyHkruW0sEsp1kzKL9Xhrm2FcqwDMIc0/",
-            "author": "https://www.instagram.com/viiivacious/",
-            "caption": "viiivacious our annual renaissance festival  a unity between the northern and southern tribes  3h",
-            "num_likes": 109,
+            "post_link": "https://www.instagram.com/p/CH84UC4HIiQ/",
+            "author": "https://www.instagram.com/utsa.asr/",
+            "caption": "utsa.asr   introducing our first neo # 106 montzi nabia hernandez of alpha gamma spring 20!  fun fact: ive died my hair more than 20 times  big: # 98 jeannie aine jeon hi hi littleeeee! i love you so much!~~ i am so proud of you and everything you do! you put a lot of effort into everything that you do and it makes me so hecking proud to call you my little! words cant describe how wonderful you are, i cant wait to see all the amazing things that youll do! wahhh i just love you so much littleee!!! (**) - @jeanniepop.uwu 6h",
+            "num_likes": 84,
             "hashtags": [],
             "num_hashtags": 0,
-            "date": "2020-11-15T",
-            "location": "texas renaissance festival",
-            "lat": 30.2562,
-            "lon": -95.8298
+            "date": "2020-11-23T",
+            "location": "utsa - the university of texas at san antonio",
+            "lat": 29.5827,
+            "lon": -98.6189
         }
     },
     {
@@ -48,366 +48,27 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                -79.9648,
-                40.4288
+                -96.7005,
+                40.8202
             ]
         },
         "properties": {
-            "post_link": "https://www.instagram.com/p/CHnxt7tpyjz3JyzuWCSqjpd9pqruy_00KTrwpU0/",
-            "author": "https://www.instagram.com/shakthenak/",
-            "caption": "shakthenak we took a pitcher.. it lasted longer#doubledatenight 7h",
-            "num_likes": 323,
-            "hashtags": [
-                "https://www.instagram.com/explore/tags/doubledatenight/"
-            ],
-            "num_hashtags": 1,
-            "date": "2020-11-15T",
-            "location": "hofbrauhaus pittsburgh",
-            "lat": 40.4288,
-            "lon": -79.9648
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                -96.6713,
-                33.0577
-            ]
-        },
-        "properties": {
-            "post_link": "https://www.instagram.com/p/CHnrFw8lDCVHO5i15-NWdKnF9lK4A8owhfv8r80/",
-            "author": "https://www.instagram.com/super_briyant/",
-            "caption": "super_briyant be the beacon of good vibrations  sometimes all it takes to be happy is to tell the universe that you are enough, have enough, and are fulfilled #goodvibes 8h",
-            "num_likes": 151,
-            "hashtags": [
-                "https://www.instagram.com/explore/tags/goodvibes/"
-            ],
-            "num_hashtags": 1,
-            "date": "2020-11-15T",
-            "location": "oak point nature preserve",
-            "lat": 33.0577,
-            "lon": -96.6713
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                -122.5428,
-                38.5586
-            ]
-        },
-        "properties": {
-            "post_link": "https://www.instagram.com/p/CHoLFGzBwum5UPAjU9i6onKwsyeMYznj6sCdV40/",
-            "author": "https://www.instagram.com/tiffanyy__co/",
-            "caption": "tiffanyy__co escaped into a fairytale for a day 3h",
-            "num_likes": 141,
-            "hashtags": [],
-            "num_hashtags": 0,
-            "date": "2020-11-15T",
-            "location": "castello di amorosa",
-            "lat": 38.5586,
-            "lon": -122.5428
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                -97.0707,
-                36.12
-            ]
-        },
-        "properties": {
-            "post_link": "https://www.instagram.com/p/CHoKpjBhjRA/",
-            "author": "https://www.instagram.com/_isisfrazier_/",
-            "caption": "_isisfrazier_ special shoutout to my family, my friends & my boyfriend for helping me celebrate the best birthday ever(: cheers to 22!!  3h",
-            "num_likes": 399,
-            "hashtags": [],
-            "num_hashtags": 0,
-            "date": "2020-11-15T",
-            "location": "theta pond",
-            "lat": 36.12,
-            "lon": -97.0707
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                -95.3698,
-                29.7604
-            ]
-        },
-        "properties": {
-            "post_link": "https://www.instagram.com/p/CHoA3fcgQIT/",
-            "author": "https://www.instagram.com/tyler.trann/",
-            "caption": "tyler.trann guess what day it is... #seniorsunday :) 5h",
-            "num_likes": 370,
-            "hashtags": [
-                "https://www.instagram.com/explore/tags/seniorsunday/"
-            ],
-            "num_hashtags": 1,
-            "date": "2020-11-15T",
-            "location": "houston, texas",
-            "lat": 29.7604,
-            "lon": -95.3698
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                -84.388,
-                33.749
-            ]
-        },
-        "properties": {
-            "post_link": "https://www.instagram.com/p/CHnw_L6hTWa/",
-            "author": "https://www.instagram.com/ufkappas/",
-            "caption": "ufkappas ill stop the world and melt with you sister ice cream date 7h",
-            "num_likes": 175,
-            "hashtags": [],
-            "num_hashtags": 0,
-            "date": "2020-11-15T",
-            "location": "atlanta, georgia",
-            "lat": 33.749,
-            "lon": -84.388
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                -97.3636,
-                32.7096
-            ]
-        },
-        "properties": {
-            "post_link": "https://www.instagram.com/p/CHoQ6CXrJ2L/",
-            "author": "https://www.instagram.com/tcu_alphas/",
-            "caption": "tcu_alphas charter day   monday, nov. 15, 1971  happy 49 years to the oldest & coldest chapter seated at texas christian university.  50 years loading...   #experiencethehpe  3h",
-            "num_likes": 189,
-            "hashtags": [
-                "https://www.instagram.com/explore/tags/experiencetheh%CF%88pe/"
-            ],
-            "num_hashtags": 1,
-            "date": "2020-11-15T",
-            "location": "tcu  texas christian university",
-            "lat": 32.7096,
-            "lon": -97.3636
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                -72.5301,
-                42.3868
-            ]
-        },
-        "properties": {
-            "post_link": "https://www.instagram.com/p/CHntojznKmY/",
-            "author": "https://www.instagram.com/lambdaphiepsilon/",
-            "caption": "lambdaphiepsilon last month, our brothers at the university of massachusetts aided the greater boston food bank by packaging over 3,200 meals and 3,800 pounds of snacks for families at home. #monthofservice @umasslambdas 8h",
-            "num_likes": 111,
-            "hashtags": [
-                "https://www.instagram.com/explore/tags/monthofservice/"
-            ],
-            "num_hashtags": 1,
-            "date": "2020-11-15T",
-            "location": "university of massachusetts",
-            "lat": 42.3868,
-            "lon": -72.5301
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                -117.2546,
-                32.8663
-            ]
-        },
-        "properties": {
-            "post_link": "https://www.instagram.com/p/CHoYbYTHC-1/",
-            "author": "https://www.instagram.com/nguyenally/",
-            "caption": "nguyenally shell yeah!  2h",
-            "num_likes": 185,
-            "hashtags": [],
-            "num_hashtags": 0,
-            "date": "2020-11-16T",
-            "location": "scripps pier",
-            "lat": 32.8663,
-            "lon": -117.2546
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                -77.6749,
-                43.0845
-            ]
-        },
-        "properties": {
-            "post_link": "https://www.instagram.com/p/CHnhSOtHqch/",
-            "author": "https://www.instagram.com/ritlambdas/",
-            "caption": "ritlambdas the brothers of lambda phi epsilon at rochester institute of technology are giving back this week in collaboration with be the match! flip through the slides to see whats coming up  #bethematch #lambdaphiepsilon 10h",
-            "num_likes": 65,
-            "hashtags": [
-                "https://www.instagram.com/explore/tags/bethematch/",
-                "https://www.instagram.com/explore/tags/lambdaphiepsilon/"
-            ],
-            "num_hashtags": 2,
-            "date": "2020-11-15T",
-            "location": "rochester institute of technology",
-            "lat": 43.0845,
-            "lon": -77.6749
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                -119.5494,
-                37.7477
-            ]
-        },
-        "properties": {
-            "post_link": "https://www.instagram.com/p/CHoIvhkl6if/",
-            "author": "https://www.instagram.com/timmyleong/",
-            "caption": "timmyleong theyre the view i came to see  4h",
+            "post_link": "https://www.instagram.com/p/CH6ud3NBhwD/",
+            "author": "https://www.instagram.com/unl_xihoneys/",
+            "caption": "unl_xihoneys  meet golden gamma line  the rho associate chapter of delta xi nu multicultural sorority, inc. is incredibly excited and proud to announce our newest xi honey! she may be a solo, but that just shows how determined she was to become a sister of dxn! our newest member is one of the strongest girls we have ever met and we are so proud of all the hard work she has put into this process! grisela, welcome to the sweetest sisterhood! we love you!    name: grisela nica diego-mateo  big: jessica alegra zuniga  hometown: omaha, nebraska  grade: sophomore  major and minor: elementary and early childhood education with a minor in music technology  fun fact: im a first generation student and the oldest child out of 7 kids  why dxn?: i fell i love with the motto! i wanted to be apart of an organization that values the importance of multicultural education. i felt welcomed by the ladies and felt a warm spot in my heart. my process was paused due to covid-19 but it didnt stop me from becoming a butterfly!  what are you most looking forward to?: im excited to start building memories with my new sisters and to continue promoting the mission statement our founding mothers established! #dxn #deltaxinu #xihoneys #unl #unlgreek 1d",
             "num_likes": 148,
-            "hashtags": [],
-            "num_hashtags": 0,
-            "date": "2020-11-15T",
-            "location": "mirror lake (california)",
-            "lat": 37.7477,
-            "lon": -119.5494
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                -82.3821,
-                27.2475
-            ]
-        },
-        "properties": {
-            "post_link": "https://www.instagram.com/p/CHoeWJrgxTr/",
-            "author": "https://www.instagram.com/nancy.ngu/",
-            "caption": "nancy.ngu my angels 1h",
-            "num_likes": 68,
-            "hashtags": [],
-            "num_hashtags": 0,
-            "date": "2020-11-16T",
-            "location": "sarasota national cemetery",
-            "lat": 27.2475,
-            "lon": -82.3821
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                -89.7314,
-                43.4284
-            ]
-        },
-        "properties": {
-            "post_link": "https://www.instagram.com/p/CHoHu8nhRgc/",
-            "author": "https://www.instagram.com/frantastic2021/",
-            "caption": "frantastic2021 devils lake but make it 30 degrees out  4h",
-            "num_likes": 98,
-            "hashtags": [],
-            "num_hashtags": 0,
-            "date": "2020-11-15T",
-            "location": "devil's lake state park",
-            "lat": 43.4284,
-            "lon": -89.7314
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                6.8874,
-                45.8793
-            ]
-        },
-        "properties": {
-            "post_link": "https://www.instagram.com/p/CHnjT4Gnaa1/",
-            "author": "https://www.instagram.com/aidanrodriguez74/",
-            "caption": "aidanrodriguez74 3,842m  9h",
-            "num_likes": 171,
-            "hashtags": [],
-            "num_hashtags": 0,
-            "date": "2020-11-15T",
-            "location": "aiguille du midi",
-            "lat": 45.8793,
-            "lon": 6.8874
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                -75.4126,
-                39.8842
-            ]
-        },
-        "properties": {
-            "post_link": "https://www.instagram.com/p/CHnhT7Gp9sYH2hT1RXnB1_UwRbJkjHi609E2000/",
-            "author": "https://www.instagram.com/michelle.tingg/",
-            "caption": "michelle.tingg  pt 2 10h",
-            "num_likes": 292,
-            "hashtags": [],
-            "num_hashtags": 0,
-            "date": "2020-11-15T",
-            "location": "linvilla orchards",
-            "lat": 39.8842,
-            "lon": -75.4126
-        }
-    },
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                -93.2277,
-                44.974
-            ]
-        },
-        "properties": {
-            "post_link": "https://www.instagram.com/p/CHn_TgfBOsL/",
-            "author": "https://www.instagram.com/umnpdpsi/",
-            "caption": "umnpdpsi      #87: alex  moua year:  major:   -        ? i joined pdp because of my lack of belonging within the uminn campus. i felt as if i had a community that i could genuinely call my own then i would be able to achieve what i was yearning for. i was eventually introduced to the pi delta psi fraternity and fortunately enough, i gained more than i expected when i initially took my first step into the brotherhood. being associated with the wonderful brothers of pi delta psi brought not only a sense of belonging, a community, and a brotherhood i can proudly be affiliated with, but assisted in the clarity of who i am and what i want to bring forth within myself and my community. i will forever be grateful to those that continue to support and push me to continue onwards. whereas, these individuals strongly reside within those that i call brothers within the pi delta psi fraternity. 5h",
-            "num_likes": 82,
             "hashtags": [
-                "https://www.instagram.com/explore/tags/87/"
+                "https://www.instagram.com/explore/tags/dxn/",
+                "https://www.instagram.com/explore/tags/deltaxinu/",
+                "https://www.instagram.com/explore/tags/xihoneys/",
+                "https://www.instagram.com/explore/tags/unl/",
+                "https://www.instagram.com/explore/tags/unlgreek/"
             ],
-            "num_hashtags": 1,
-            "date": "2020-11-15T",
-            "location": "university of minnesota twin cities",
-            "lat": 44.974,
-            "lon": -93.2277
+            "num_hashtags": 5,
+            "date": "2020-11-23T",
+            "location": "university of nebraska-lincoln",
+            "lat": 40.8202,
+            "lon": -96.7005
         }
     }
 ]

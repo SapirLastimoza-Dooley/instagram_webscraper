@@ -45,15 +45,15 @@ class scrape_feed(instagram_bot):
                     pt.already_liked_counter += 1
 
             # breaks if only old posts
-#            if pt.already_liked_counter > config.max_already_liked:
-#                break
+            if pt.already_liked_counter > config.max_already_liked:
+                break
             
             # skips irrelevant posts
             if is_relevant_post == False:
                 continue
 
             # if matched post, save and try to find location
-            if filtered_post.matches_keyword == False:
+            if filtered_post.matches_keyword == True:
                 pt.matched_post_counter += 1
                 if config.save_post == True:
                     self.click_button(xpaths.save_button, 'save button')

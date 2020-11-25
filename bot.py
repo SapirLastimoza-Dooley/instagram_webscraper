@@ -157,8 +157,15 @@ class instagram_bot():
         try:
             result = [i for i in keywords if(i in text)]
         except NoSuchElementException:
-            return False            
-        return bool(result)
+            return []            
+        return result
+
+    def type_comment(self, comment):
+        d = self.driver
+        d.find_element_by_xpath(xpaths.comment).send_keys(comment)
+        sleep(1)
+        d.find_element_by_xpath(xpaths.post_button).click()
+        sleep(1)
 
 
     # opens google and searches for latitude and longitude
