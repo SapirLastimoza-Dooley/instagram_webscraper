@@ -1,4 +1,6 @@
 from selenium import webdriver
+from webdriver_manager.chrome import ChromeDriverManager
+
 
 from bot import instagram_bot
 from ig_parser import ig_parser
@@ -13,7 +15,7 @@ import geojson
 
 if __name__ == '__main__':
 
-    driver = webdriver.Chrome()
+    driver = webdriver.Chrome(ChromeDriverManager().install())
     ig = instagram_bot(driver)
     p = ig_parser(driver)
     f = ig_filter(driver)
