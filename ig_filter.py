@@ -79,6 +79,12 @@ class ig_filter(instagram_bot):
         print()
         return filtered_post(matches_keyword, matched_keyword, is_new_post, is_low_likes, is_low_hashtags, does_post_exist, is_user_post)
 
+    def filter_profile(self, profile, config, keywords):
+        matches_keyword = bool(self.filter_text(profile.bio, keywords))
+        matches_keyword = (self.filter_text(profile.bio, keywords))
+
+        return matches_keyword
+
     def is_relevant_post(self, filtered_post):
         if filtered_post.does_post_exist == False or \
             filtered_post.is_low_hashtags == False or \

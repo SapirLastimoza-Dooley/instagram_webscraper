@@ -4,21 +4,235 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                -83.29,
-                30.8466
+                -96.3365,
+                30.6188
             ]
         },
         "properties": {
-            "post_link": "https://www.instagram.com/p/CH8uDJHgqPr/",
-            "author": "https://www.instagram.com/nico_corona/",
-            "caption": "nico_corona as a prophyte, i'm excited to see my chapter go from ten to 33. as a founder, i'm tiredt. welcome to r.e.n.e.g.a.d.e. rho epsilon, zeta line! 8h",
+            "post_link": "https://www.instagram.com/p/CKPl7RxBPx08tafdRVjbE4auNlJ5A6tBK3aR5M0/",
+            "author": "https://www.instagram.com/melon_alanis/",
+            "caption": "melon_alanis first day of ph.d. school!! blessed to be able to continue for free! (yes sir! received scholarships)  if it wasnt for the constant love, support, and encouragement from my mama; i wouldnt be where i am today. this degree will not be for me... pero para mi mam! porqu sacrificio todo para nosotros! te queremos muchsimo! an seguimos! next stop... dr. melody alanis-lopez #gradlife#tastatus#yalltakemyclass#iamacoolta#firstdayofschoolpics 2h",
+            "num_likes": 301,
+            "hashtags": [
+                "https://www.instagram.com/explore/tags/gradlife/",
+                "https://www.instagram.com/explore/tags/tastatus/",
+                "https://www.instagram.com/explore/tags/yalltakemyclass/",
+                "https://www.instagram.com/explore/tags/iamacoolta/",
+                "https://www.instagram.com/explore/tags/firstdayofschoolpics%F0%9F%98%82/"
+            ],
+            "num_hashtags": 5,
+            "date": "2021-01-19T",
+            "location": "texas a&m university",
+            "lat": 30.6188,
+            "lon": -96.3365
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -96.3365,
+                30.6188
+            ]
+        },
+        "properties": {
+            "post_link": "https://www.instagram.com/p/CKPGF7HlwjV/",
+            "author": "https://www.instagram.com/tamustuact/",
+            "caption": "tamustuact company f-1s mission is to mold morally sound, physically and mentally disciplined, and internationally involved leaders out of our cadets in order to serve the greater good. to learn more, follow them on ig --> @companyf1 #orgoftheday #agsinvovled 7h",
+            "num_likes": 42,
+            "hashtags": [
+                "https://www.instagram.com/explore/tags/orgoftheday/",
+                "https://www.instagram.com/explore/tags/agsinvovled/"
+            ],
+            "num_hashtags": 2,
+            "date": "2021-01-19T",
+            "location": "texas a&m university",
+            "lat": 30.6188,
+            "lon": -96.3365
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -87.0739,
+                20.6296
+            ]
+        },
+        "properties": {
+            "post_link": "https://www.instagram.com/p/CKO6mv3n1EZ/",
+            "author": "https://www.instagram.com/jinjuschmitz/",
+            "caption": "jinjuschmitz she wild 9h",
+            "num_likes": 533,
+            "hashtags": [],
+            "num_hashtags": 0,
+            "date": "2021-01-19T",
+            "location": "playa del carmen, quintana roo",
+            "lat": 20.6296,
+            "lon": -87.0739
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -98.872,
+                30.2752
+            ]
+        },
+        "properties": {
+            "post_link": "https://www.instagram.com/p/CKMSo3OFqqSe3Zeuh2_BBqUqRcWQ0HjpYWq7b00/",
+            "author": "https://www.instagram.com/an.usha/",
+            "caption": "an.usha grape creek vineyards 1d",
+            "num_likes": 103,
+            "hashtags": [],
+            "num_hashtags": 0,
+            "date": "2021-01-18T",
+            "location": "fredericksburg, texas",
+            "lat": 30.2752,
+            "lon": -98.872
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -95.6464,
+                29.74
+            ]
+        },
+        "properties": {
+            "post_link": "https://www.instagram.com/p/CKIBuLlp_wqa5jNM3jWx6kY9YtTSJYsuWhIeh00/",
+            "author": "https://www.instagram.com/viiivacious/",
+            "caption": "viiivacious light at the end of the tunnel 3d",
+            "num_likes": 165,
+            "hashtags": [],
+            "num_hashtags": 0,
+            "date": "2021-01-17T",
+            "location": "seismique",
+            "lat": 29.74,
+            "lon": -95.6464
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -81.5583,
+                28.3575
+            ]
+        },
+        "properties": {
+            "post_link": "https://www.instagram.com/p/CKJ-sJmjZKB/",
+            "author": "https://www.instagram.com/stefanibrynn/",
+            "caption": "stefanibrynn just a few of my favorite things: sunset boulevard, rock 'n' roller coaster, the millennium falcon, rise of the resistance, my droid (st33l1x), and my elemental nature hilt (aphrodite) 2d",
+            "num_likes": 97,
+            "hashtags": [],
+            "num_hashtags": 0,
+            "date": "2021-01-17T",
+            "location": "disney's hollywood studios",
+            "lat": 28.3575,
+            "lon": -81.5583
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -97.7431,
+                30.2672
+            ]
+        },
+        "properties": {
+            "post_link": "https://www.instagram.com/p/CKNL2SBhh1f9fgCNmhzjugT2_rfdga_XA2__6I0/",
+            "author": "https://www.instagram.com/kamilleffer/",
+            "caption": "kamilleffer girls almighty 1d",
+            "num_likes": 237,
+            "hashtags": [],
+            "num_hashtags": 0,
+            "date": "2021-01-19T",
+            "location": "austin, texas",
+            "lat": 30.2672,
+            "lon": -97.7431
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -96.3365,
+                30.6188
+            ]
+        },
+        "properties": {
+            "post_link": "https://www.instagram.com/p/CKN9eTFlIRN/",
+            "author": "https://www.instagram.com/cmsaags/",
+            "caption": "cmsaags a new semester means that its time for the council for minority student affairs' informationals! we are so excited to welcome both new and old members this year. our informationals will be held through zoom, which you can access through the qr code, as well as the links in bio. we hope to see you all there! #tamu21 #tamu22 #tamu23 #tamu24 17h",
+            "num_likes": 0,
+            "hashtags": [
+                "https://www.instagram.com/explore/tags/tamu21/",
+                "https://www.instagram.com/explore/tags/tamu22/",
+                "https://www.instagram.com/explore/tags/tamu23/",
+                "https://www.instagram.com/explore/tags/tamu24/"
+            ],
+            "num_hashtags": 4,
+            "date": "2021-01-19T",
+            "location": "texas a&m university",
+            "lat": 30.6188,
+            "lon": -96.3365
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -97.7431,
+                30.2672
+            ]
+        },
+        "properties": {
+            "post_link": "https://www.instagram.com/p/CKM_xcNnyuP/",
+            "author": "https://www.instagram.com/manny_zoom/",
+            "caption": "manny_zoom what you see vs what i see   #mannymonday 1d",
+            "num_likes": 108,
+            "hashtags": [
+                "https://www.instagram.com/explore/tags/mannymonday/"
+            ],
+            "num_hashtags": 1,
+            "date": "2021-01-18T",
+            "location": "austin, texas",
+            "lat": 30.2672,
+            "lon": -97.7431
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -105.2659,
+                40.0076
+            ]
+        },
+        "properties": {
+            "post_link": "https://www.instagram.com/p/CKNiI7ynIsm/",
+            "author": "https://www.instagram.com/taupsiomega.beta/",
+            "caption": "taupsiomega.beta the beta chapter of tau psi omega fraternity, inc. will be hosting a fundraiser through chipotle mexican grill located on 28th street in boulder!! use promo code 64fgdc7 for online orders! 22h",
             "num_likes": 0,
             "hashtags": [],
             "num_hashtags": 0,
-            "date": "2020-11-23T",
-            "location": "valdosta state university",
-            "lat": 30.8466,
-            "lon": -83.29
+            "date": "2021-01-19T",
+            "location": "university of colorado boulder",
+            "lat": 40.0076,
+            "lon": -105.2659
         }
     },
     {
@@ -26,21 +240,81 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                -98.6189,
-                29.5827
+                -96.3365,
+                30.6188
             ]
         },
         "properties": {
-            "post_link": "https://www.instagram.com/p/CH84UC4HIiQ/",
-            "author": "https://www.instagram.com/utsa.asr/",
-            "caption": "utsa.asr   introducing our first neo # 106 montzi nabia hernandez of alpha gamma spring 20!  fun fact: ive died my hair more than 20 times  big: # 98 jeannie aine jeon hi hi littleeeee! i love you so much!~~ i am so proud of you and everything you do! you put a lot of effort into everything that you do and it makes me so hecking proud to call you my little! words cant describe how wonderful you are, i cant wait to see all the amazing things that youll do! wahhh i just love you so much littleee!!! (**) - @jeanniepop.uwu 6h",
-            "num_likes": 84,
+            "post_link": "https://www.instagram.com/p/CKMhMe5FDkF/",
+            "author": "https://www.instagram.com/tamustuact/",
+            "caption": "tamustuact the goal of phi kappa psi is to create a diverse brotherhood that paves pathways for success in all aspects of life for every member. to learn more, follow them on ig: @aggiephipsi #orgoftheday #agsinvolved 1d",
+            "num_likes": 28,
+            "hashtags": [
+                "https://www.instagram.com/explore/tags/orgoftheday/",
+                "https://www.instagram.com/explore/tags/agsinvolved/"
+            ],
+            "num_hashtags": 2,
+            "date": "2021-01-18T",
+            "location": "texas a&m university",
+            "lat": 30.6188,
+            "lon": -96.3365
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -76.8043,
+                17.9858
+            ]
+        },
+        "properties": {
+            "post_link": "https://www.instagram.com/p/CKNCneklYvx/",
+            "author": "https://www.instagram.com/rmpivxx/",
+            "caption": "rmpivxx ive forgotten what its like to have a normal sleeping pattern, just keep smiling. . . . #sleep#smile #ghost #hustle#nightlife#trench#gruntlife#dream#snooze#5amclub#handyman#wrenchlife 1d",
+            "num_likes": 66,
+            "hashtags": [
+                "https://www.instagram.com/explore/tags/sleep/",
+                "https://www.instagram.com/explore/tags/smile%F0%9F%98%8A/",
+                "https://www.instagram.com/explore/tags/ghost/",
+                "https://www.instagram.com/explore/tags/hustle/",
+                "https://www.instagram.com/explore/tags/nightlife/",
+                "https://www.instagram.com/explore/tags/trench/",
+                "https://www.instagram.com/explore/tags/gruntlife/",
+                "https://www.instagram.com/explore/tags/dream/",
+                "https://www.instagram.com/explore/tags/snooze/",
+                "https://www.instagram.com/explore/tags/5amclub/",
+                "https://www.instagram.com/explore/tags/handyman/",
+                "https://www.instagram.com/explore/tags/wrenchlife%F0%9F%94%A7/"
+            ],
+            "num_hashtags": 12,
+            "date": "2021-01-18T",
+            "location": "trench town kingston, jamaica",
+            "lat": 17.9858,
+            "lon": -76.8043
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -95.6464,
+                29.74
+            ]
+        },
+        "properties": {
+            "post_link": "https://www.instagram.com/p/CKIDDYchb0o/",
+            "author": "https://www.instagram.com/a.ngelinuh/",
+            "caption": "a.ngelinuh best of it 3d",
+            "num_likes": 738,
             "hashtags": [],
             "num_hashtags": 0,
-            "date": "2020-11-23T",
-            "location": "utsa - the university of texas at san antonio",
-            "lat": 29.5827,
-            "lon": -98.6189
+            "date": "2021-01-17T",
+            "location": "seismique",
+            "lat": 29.74,
+            "lon": -95.6464
         }
     },
     {
@@ -48,27 +322,264 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                -96.7005,
-                40.8202
+                -105.7631,
+                39.8917
             ]
         },
         "properties": {
-            "post_link": "https://www.instagram.com/p/CH6ud3NBhwD/",
-            "author": "https://www.instagram.com/unl_xihoneys/",
-            "caption": "unl_xihoneys  meet golden gamma line  the rho associate chapter of delta xi nu multicultural sorority, inc. is incredibly excited and proud to announce our newest xi honey! she may be a solo, but that just shows how determined she was to become a sister of dxn! our newest member is one of the strongest girls we have ever met and we are so proud of all the hard work she has put into this process! grisela, welcome to the sweetest sisterhood! we love you!    name: grisela nica diego-mateo  big: jessica alegra zuniga  hometown: omaha, nebraska  grade: sophomore  major and minor: elementary and early childhood education with a minor in music technology  fun fact: im a first generation student and the oldest child out of 7 kids  why dxn?: i fell i love with the motto! i wanted to be apart of an organization that values the importance of multicultural education. i felt welcomed by the ladies and felt a warm spot in my heart. my process was paused due to covid-19 but it didnt stop me from becoming a butterfly!  what are you most looking forward to?: im excited to start building memories with my new sisters and to continue promoting the mission statement our founding mothers established! #dxn #deltaxinu #xihoneys #unl #unlgreek 1d",
-            "num_likes": 148,
+            "post_link": "https://www.instagram.com/p/CKHfa7IpIxxcoOCa9mRsg-xoYPRL4hBjom8kJ00/",
+            "author": "https://www.instagram.com/matthew_daoo/",
+            "caption": "matthew_daoo find your inner snow  3d",
+            "num_likes": 384,
+            "hashtags": [],
+            "num_hashtags": 0,
+            "date": "2021-01-16T",
+            "location": "winter park, colorado",
+            "lat": 39.8917,
+            "lon": -105.7631
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -88.7741,
+                41.9342
+            ]
+        },
+        "properties": {
+            "post_link": "https://www.instagram.com/p/CKKsbnPFHKF/",
+            "author": "https://www.instagram.com/niuakdphi/",
+            "caption": "niuakdphi  meet our active house!  #36 lauren  hestia  todd year: junior major: psychology positions: academic chair & caa relations favorite place to study: home on my desk  (all photos were taken while enforcing social distancing. individuals were wearing masks before, during, and after each shot.)  #akdphi #niuakdphi #northernillinoisuniversity 2d",
+            "num_likes": 164,
             "hashtags": [
-                "https://www.instagram.com/explore/tags/dxn/",
-                "https://www.instagram.com/explore/tags/deltaxinu/",
-                "https://www.instagram.com/explore/tags/xihoneys/",
-                "https://www.instagram.com/explore/tags/unl/",
-                "https://www.instagram.com/explore/tags/unlgreek/"
+                "https://www.instagram.com/explore/tags/36/",
+                "https://www.instagram.com/explore/tags/akdphi/",
+                "https://www.instagram.com/explore/tags/niuakdphi/",
+                "https://www.instagram.com/explore/tags/northernillinoisuniversity/"
             ],
-            "num_hashtags": 5,
-            "date": "2020-11-23T",
-            "location": "university of nebraska-lincoln",
-            "lat": 40.8202,
-            "lon": -96.7005
+            "num_hashtags": 4,
+            "date": "2021-01-18T",
+            "location": "northern illinois university",
+            "lat": 41.9342,
+            "lon": -88.7741
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -96.3365,
+                30.6188
+            ]
+        },
+        "properties": {
+            "post_link": "https://www.instagram.com/p/CKHSKavlnv9/",
+            "author": "https://www.instagram.com/2024aggies/",
+            "caption": "2024aggies our final officer intro is jacob franke!  howdy yall, my name is jacob franke and i am serving as the vice president of finance for the class of 24. i was born and raised in aggieland, and went to college station high school. im a business major, currently on the finance track and enjoy playing tennis, hanging out with friends and eating food. let me know if you are ever down for a set of tennis, or just want someone to grab lunch with- im always down for some whataburger.  #tamu #tamu24 #gigem 3d",
+            "num_likes": 482,
+            "hashtags": [
+                "https://www.instagram.com/explore/tags/tamu/",
+                "https://www.instagram.com/explore/tags/tamu24/",
+                "https://www.instagram.com/explore/tags/gigem/"
+            ],
+            "num_hashtags": 3,
+            "date": "2021-01-16T",
+            "location": "texas a&m university",
+            "lat": 30.6188,
+            "lon": -96.3365
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -88.7741,
+                41.9342
+            ]
+        },
+        "properties": {
+            "post_link": "https://www.instagram.com/p/CKIFJqIl6oT/",
+            "author": "https://www.instagram.com/niuakdphi/",
+            "caption": "niuakdphi  meet our active house!  #34 qiming (jennie)  khydra  ruan year: junior major: photography minor: foreign language in chinese positions: co-performance & media committee favorite genre of music: r&b  (all photos were taken while enforcing social distancing. individuals were wearing masks before, during, and after each shot.)  #akdphi #niuakdphi #northernillinoisuniversity 3d",
+            "num_likes": 138,
+            "hashtags": [
+                "https://www.instagram.com/explore/tags/34/",
+                "https://www.instagram.com/explore/tags/akdphi/",
+                "https://www.instagram.com/explore/tags/niuakdphi/",
+                "https://www.instagram.com/explore/tags/northernillinoisuniversity/"
+            ],
+            "num_hashtags": 4,
+            "date": "2021-01-17T",
+            "location": "northern illinois university",
+            "lat": 41.9342,
+            "lon": -88.7741
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -96.3363,
+                30.6084
+            ]
+        },
+        "properties": {
+            "post_link": "https://www.instagram.com/p/CKE5TmSghU1/",
+            "author": "https://www.instagram.com/lauradevain/",
+            "caption": "lauradevain countdown to aggie bling starts now!!! #btho90hours 4d",
+            "num_likes": 597,
+            "hashtags": [
+                "https://www.instagram.com/explore/tags/btho90hours/"
+            ],
+            "num_hashtags": 1,
+            "date": "2021-01-15T",
+            "location": "the association of former students",
+            "lat": 30.6084,
+            "lon": -96.3363
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -95.6464,
+                29.74
+            ]
+        },
+        "properties": {
+            "post_link": "https://www.instagram.com/p/CKFnyU3J0ZSDk0Pv5ne2oXbmUFwq3ryV2gB4SY0/",
+            "author": "https://www.instagram.com/viiivacious/",
+            "caption": "viiivacious head in the clouds  (literally) 3d",
+            "num_likes": 156,
+            "hashtags": [],
+            "num_hashtags": 0,
+            "date": "2021-01-16T",
+            "location": "seismique",
+            "lat": 29.74,
+            "lon": -95.6464
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -88.7741,
+                41.9342
+            ]
+        },
+        "properties": {
+            "post_link": "https://www.instagram.com/p/CKEygUBlxRM/",
+            "author": "https://www.instagram.com/niu_chisigs/",
+            "caption": "niu_chisigs interested in joining greek life? interested to learn more about our brotherhood and chi sigma tau? fill out our interest form for this upcoming spring semester! link is in our bio. looking forward to see you guys at rush!  #thisiscst 4d",
+            "num_likes": 199,
+            "hashtags": [
+                "https://www.instagram.com/explore/tags/thisiscst/"
+            ],
+            "num_hashtags": 1,
+            "date": "2021-01-15T",
+            "location": "northern illinois university",
+            "lat": 41.9342,
+            "lon": -88.7741
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -96.8062,
+                33.1075
+            ]
+        },
+        "properties": {
+            "post_link": "https://www.instagram.com/p/CKE1kSBB6Yw/",
+            "author": "https://www.instagram.com/spencerhoh/",
+            "caption": "spencerhoh daily essentials. this week stock top: cgc & acb moving into 2021 with a great start.  only growth ahead. as an update for music stuff, its been good. just got back from a year break from mixing. new mixtapes dropping soon so keep watch  4d",
+            "num_likes": 67,
+            "hashtags": [],
+            "num_hashtags": 0,
+            "date": "2021-01-15T",
+            "location": "mash'd - frisco",
+            "lat": 33.1075,
+            "lon": -96.8062
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -106.3257,
+                32.7872
+            ]
+        },
+        "properties": {
+            "post_link": "https://www.instagram.com/p/CKFF78zhmrn/",
+            "author": "https://www.instagram.com/daniellian_/",
+            "caption": "daniellian_ come correct or not at all.  : @noah.bethard 4d",
+            "num_likes": 294,
+            "hashtags": [],
+            "num_hashtags": 0,
+            "date": "2021-01-15T",
+            "location": "white sands national monument",
+            "lat": 32.7872,
+            "lon": -106.3257
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -88.7741,
+                41.9342
+            ]
+        },
+        "properties": {
+            "post_link": "https://www.instagram.com/p/CKEzbQ9Fq12/",
+            "author": "https://www.instagram.com/niuakdphi/",
+            "caption": "niuakdphi  meet our active house!  #27 bianca  sola*rize  cortez year: sophomore major: marketing positions: secretary & cultural chair favorite place to study: huskie den with my sxsterssss!  (all photos were taken while enforcing social distancing. individuals were wearing masks before, during, and after each shot.)  #akdphi #niuakdphi #northernillinoisuniversity 4d",
+            "num_likes": 118,
+            "hashtags": [
+                "https://www.instagram.com/explore/tags/27/",
+                "https://www.instagram.com/explore/tags/akdphi/",
+                "https://www.instagram.com/explore/tags/niuakdphi/",
+                "https://www.instagram.com/explore/tags/northernillinoisuniversity/"
+            ],
+            "num_hashtags": 4,
+            "date": "2021-01-15T",
+            "location": "northern illinois university",
+            "lat": 41.9342,
+            "lon": -88.7741
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -97.7431,
+                30.2672
+            ]
+        },
+        "properties": {
+            "post_link": "https://www.instagram.com/p/CKKLfWYlnOh/",
+            "author": "https://www.instagram.com/_marc7_cisneros/",
+            "caption": "_marc7_cisneros tu eres una estrella mami, y yo soy tu fanatico  2d",
+            "num_likes": 121,
+            "hashtags": [],
+            "num_hashtags": 0,
+            "date": "2021-01-17T",
+            "location": "austin, texas",
+            "lat": 30.2672,
+            "lon": -97.7431
         }
     }
 ]

@@ -30,7 +30,7 @@ class config:
     # parameters for bot filter
     max_post_likes: int = 1000  # skips posts with more likes
     max_hashtags: int = 15      # skips posts with more hashtags
-    max_already_liked: int = 30 # stops when all posts have been liked
+    max_already_liked: int = 20 # stops when all posts have been liked
     max_old_posts: int = 30     # stops when posts are all old
     max_post_age: int = 30      # number of days qualifying post as old      
 
